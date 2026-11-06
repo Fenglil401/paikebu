@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>排课簿 · 私教课表与课时统计</title>
+  <meta name="description" content="私教排课与课时台账：日/周课表、快速记课、按会员统计每周每月每年课数、月底对账与导出。">
+  <meta name="theme-color" content="#F6F4F1">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="排课簿">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="phone" id="app">
+    <header class="topbar" id="topbar"></header>
+    <main class="main" id="main"></main>
+    <button class="fab" id="fab" type="button" data-action="new-lesson" aria-label="记一节课">+</button>
+    <nav class="tabbar" id="tabbar" aria-label="主导航"></nav>
+    <div class="sheet-host" id="sheetHost"></div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

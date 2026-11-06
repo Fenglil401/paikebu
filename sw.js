@@ -1,7 +1,7 @@
 'use strict';
 
-/* 排课簿 · 离线缓存 */
-const CACHE = 'paikebu-v1';
+/* 榴莲私教 · 离线缓存 */
+const CACHE = 'liulian-v2';
 const FILES = [
   './',
   './index.html',

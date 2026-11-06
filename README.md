@@ -4,6 +4,10 @@
 
 纯前端、零依赖，数据存在手机浏览器本地；可以「添加到主屏幕」，用起来像 App。
 
+**在线地址**：<https://fenglil401.github.io/paikebu/> —— 手机打开后可直接「添加到主屏幕」。
+
+![扫码打开](preview/qr.png)
+
 | 日课表 | 周课表 |
 | --- | --- |
 | ![日课表](preview/01-day.png) | ![周课表](preview/02-week.png) |

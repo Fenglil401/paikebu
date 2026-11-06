@@ -1,7 +1,7 @@
 'use strict';
 
 /* ============================================================
-   排课簿 · 私教课表与课时台账
+   榴莲私教 · 私教课表与课时台账
    纯前端 · localStorage · 单教练 / 单门店
    ============================================================ */
 
@@ -144,7 +144,7 @@ function seed() {
 
   return {
     version: 1,
-    coach: { name: '林一', studio: '鲸跃健身 · 静安店' },
+    coach: { name: '林一', studio: '榴莲私教 · 静安店' },
     settings: { countNoShow: true },
     members,
     courses,
@@ -323,8 +323,8 @@ function lastSixMonths(memberId) {
 
 /* ------------------------------ 顶栏 / 导航 ------------------------------ */
 function topbarHTML() {
-  return '<div class="brand"><span class="brand-mark">课</span>' +
-    '<div class="brand-text"><b>排课簿</b><i>私教课表 · 课时台账</i></div></div>' +
+  return '<div class="brand"><span class="brand-mark">榴</span>' +
+    '<div class="brand-text"><b>榴莲私教</b><i>私教课表 · 课时台账</i></div></div>' +
     '<button class="avatar" data-action="settings" style="--c:#25282D" aria-label="设置">' + esc(state.coach.name.slice(0, 1)) + '</button>';
 }
 
@@ -1008,7 +1008,7 @@ function exportSummary() {
   toast('已导出会员汇总');
 }
 function exportBackup() {
-  download('排课簿备份-' + todayISO() + '.json', JSON.stringify(state, null, 2), 'application/json');
+  download('榴莲私教备份-' + todayISO() + '.json', JSON.stringify(state, null, 2), 'application/json');
   toast('备份已导出，请保存到网盘或微信收藏');
 }
 function importBackup(file) {
